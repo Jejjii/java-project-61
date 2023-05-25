@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="10.3.3">
+<file name="/home/maxim/java-project-61/app/src/main/java/hexlet/code/Engine.java">
+<error line="11" column="9" severity="error" message="&apos;annotation array initialization&apos; child has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="12" column="9" severity="error" message="&apos;annotation array initialization&apos; child has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="13" column="9" severity="error" message="&apos;annotation array initialization&apos; child has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="14" column="9" severity="error" message="&apos;annotation array initialization&apos; child has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="18" column="34" severity="error" message="Name &apos;scannerInput&apos; must match pattern &apos;^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"/>
+<error line="19" column="33" severity="error" message="Name &apos;randomGenerator&apos; must match pattern &apos;^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"/>
+</file>
+<file name="/home/maxim/java-project-61/app/src/main/java/hexlet/code/games/Progression.java">
+<error line="22" column="21" severity="error" message="&apos;array initialization&apos; child has incorrect indentation level 20, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="23" column="21" severity="error" message="&apos;array initialization&apos; child has incorrect indentation level 20, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+</file>
+<file name="/home/maxim/java-project-61/app/src/main/java/hexlet/code/games/Calc.java">
+<error line="23" column="21" severity="error" message="&apos;array initialization&apos; child has incorrect indentation level 20, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+</file>
+<file name="/home/maxim/java-project-61/app/src/main/java/hexlet/code/games/Even.java">
+<error line="5" column="9" severity="error" message="&apos;annotation array initialization&apos; child has incorrect indentation level 8, expected level should be one of the following: 4, 19, 22." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+</file>
+<file name="/home/maxim/java-project-61/app/src/main/java/hexlet/code/games/GCD.java">
+<error line="5" column="9" severity="error" message="&apos;annotation array initialization&apos; child has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="6" column="9" severity="error" message="&apos;annotation array initialization&apos; child has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="7" column="9" severity="error" message="&apos;annotation array initialization&apos; child has incorrect indentation level 8, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="16" column="13" severity="error" message="&apos;annotation array initialization&apos; child has incorrect indentation level 12, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="17" column="13" severity="error" message="&apos;annotation array initialization&apos; child has incorrect indentation level 12, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="18" column="13" severity="error" message="&apos;annotation array initialization&apos; child has incorrect indentation level 12, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="28" column="21" severity="error" message="&apos;array initialization&apos; child has incorrect indentation level 20, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="35" column="13" severity="error" message="&apos;annotation array initialization&apos; child has incorrect indentation level 12, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="36" column="13" severity="error" message="&apos;annotation array initialization&apos; child has incorrect indentation level 12, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="37" column="13" severity="error" message="&apos;annotation array initialization&apos; child has incorrect indentation level 12, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+</file>
+<file name="/home/maxim/java-project-61/app/src/main/java/hexlet/code/games/Prime.java">
+<error line="17" column="21" severity="error" message="&apos;array initialization&apos; child has incorrect indentation level 20, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="18" column="21" severity="error" message="&apos;array initialization&apos; child has incorrect indentation level 20, expected level should be 16." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+</file>
+<file name="/home/maxim/java-project-61/app/src/main/java/hexlet/code/App.java">
+</file>
+</checkstyle>
