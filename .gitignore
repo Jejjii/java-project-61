@@ -1,4 +1,5 @@
-app/.gitignore
+app/build
+/app/build
 *.iml
 *.ipr
 *.iws
