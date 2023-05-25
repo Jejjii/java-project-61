@@ -1,13 +1,11 @@
-/build/
+/app/.gitignore
 *.iml
 *.ipr
 *.iws
 /app/.gradle/
-/app/build/
 /app/out/
 .gradle/
 .idea/
-/app/build.gradle
 app/gradle-wrapper.jar
-/app/gradlew.bat
 /app/gradle-wrapper.properties
+/build/

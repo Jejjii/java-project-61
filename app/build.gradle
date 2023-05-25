@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'checkstyle'
+}
+
+group = 'hexlet.code'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+compileJava {
+    options.release = 17
+}
+
+application {
+    mainClassName = 'hexlet.code.App'
+}
+
+run {
+    standardInput = System.in
+}
+
+checkstyle {
+    toolVersion = '10.3.3' // Укажите нужную версию Checkstyle
+    configFile = rootProject.file('config/checkstyle/checkstyle.xml') // Укажите путь к конфигурационному файлу Checkstyle
+    ignoreFailures = true // Установите в true, если вы хотите, чтобы сборка прошла, даже если есть нарушения стиля
+}
+
+
+
