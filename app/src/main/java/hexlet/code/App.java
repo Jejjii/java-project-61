@@ -16,28 +16,32 @@ public class App {
         System.out.println("5 - Progression");
         System.out.println("6 - Prime");
         System.out.println("0 - Exit");
-        System.out.println("Your choice: ");
+        System.out.print("Your choice: ");
         int choice = scanner.nextInt();
-
-        Engine.sayHello(args);
+        System.out.println();
 
         switch (choice) {
             case 1:
                 Engine.sayHello(args);
                 break;
             case 2:
+                Engine.sayHello(args);
                 Engine.playEvenGame();
                 break;
             case 3:
+                Engine.sayHello(args);
                 Engine.playCalcGame();
                 break;
             case 4:
+                Engine.sayHello(args);
                 Engine.playGCDGame();
                 break;
             case 5:
+                Engine.sayHello(args);
                 Engine.playProgressionGame();
                 break;
             case 6:
+                Engine.sayHello(args);
                 Engine.playPrimeGame();
                 break;
             case 0:

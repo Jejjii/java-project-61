@@ -17,7 +17,7 @@ public class Engine {
     public static final int ROUNDS_COUNT = 3;
     private static final Scanner scannerInput = new Scanner(System.in);
     private static final Random randomGenerator = new Random();
-
+    private static String name;
     public static int getRandomNumber(int min, int max) {
 
         return randomGenerator.nextInt(max - min + 1) + min;
@@ -43,10 +43,15 @@ public class Engine {
                 System.out.println("Correct!");
                 correctAnswersCount++;
             } else {
-                System.out.printf("Wrong! Correct answer is %s.\n", correctAnswer);
+                System.out.printf("'%s' is wrong answer ;(. Correct answer was '%s'.\n", userAnswer, correctAnswer);
+                System.out.println("Let's try again, " + name + "!");
+                return;
             }
         }
-        System.out.printf("You answered %d out of %d questions correctly.\n", correctAnswersCount, ROUNDS_COUNT);
+
+        if (correctAnswersCount == ROUNDS_COUNT) {
+            System.out.println("Congratulations " + name +"!");
+        }
     }
 
     public static void playEvenGame() {
@@ -71,8 +76,8 @@ public class Engine {
     public static void sayHello(String[] args) {
         Scanner scannerHello = new Scanner(System.in);
         System.out.println("Welcome to the Brain Games!");
-        System.out.println("May I have your name?");
-        String name = scannerHello.next();
+        System.out.print("May I have your name? ");
+        name = scannerHello.next();
         System.out.println("Hello, " + name + "!");
     }
 

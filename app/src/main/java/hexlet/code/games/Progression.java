@@ -43,7 +43,7 @@ public class Progression {
         StringBuilder questionBuilder = new StringBuilder();
         for (int i = 0; i < progression.length - 1; i++) {
             if (i == hiddenIndex) {
-                questionBuilder.append("..");
+                questionBuilder.append(".. ");
             } else {
                 questionBuilder.append(progression[i]).append(" ");
             }
