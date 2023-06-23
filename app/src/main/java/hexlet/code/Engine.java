@@ -50,7 +50,7 @@ public class Engine {
         }
 
         if (correctAnswersCount == ROUNDS_COUNT) {
-            System.out.println("Congratulations " + name +"!");
+            System.out.println("Congratulations, " + name +"!");
         }
     }
 
