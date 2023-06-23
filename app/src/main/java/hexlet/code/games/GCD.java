@@ -7,7 +7,7 @@ import hexlet.code.Engine;
         "checkstyle:LineLength"
 })
 public class GCD {
-    private static final String GAME_DESCRIPTION = "What is the bigest devider of these numbers?";
+    private static final String GAME_DESCRIPTION = "Find the greatest common divisor of given numbers.";
     private static final int MIN_NUMBER = 0;
     private static final int MAX_NUMBER = 100;
     private static final int OPERATIONS_COUNT = 3;
