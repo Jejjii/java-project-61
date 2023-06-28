@@ -19,9 +19,7 @@ public class Calc {
             int correctAnswer = calc(firstOperand, secondOperand, operationIndex);
             String question = String.format("%d %s %d",
                     firstOperand, getOperationSymbol(operationIndex), secondOperand);
-            questionsAndAnswers[i] = new String[] {
-                    question,
-                    String.valueOf(correctAnswer)
+            questionsAndAnswers[i] = new String[] {question, String.valueOf(correctAnswer)
             };
         }
         Engine.play(GAME_DESCRIPTION, questionsAndAnswers);

@@ -1,8 +1,6 @@
 package hexlet.code.games;
 import hexlet.code.Engine;
 
-@SuppressWarnings({"checkstyle:WhitespaceAround", "checkstyle:Indentation",
-        "checkstyle:LineLength", "checkstyle:MissingJavadocType"})
 public class Even {
     private static final int MIN_NUMBER = 1;
     private static final int MAX_NUMBER = 100;

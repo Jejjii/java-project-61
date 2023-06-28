@@ -1,4 +1,5 @@
 package hexlet.code;
+
 import java.util.Scanner;
 import java.util.Random;
 import hexlet.code.games.Calc;
@@ -7,20 +8,14 @@ import hexlet.code.games.GCD;
 import hexlet.code.games.Progression;
 import hexlet.code.games.Prime;
 
-@SuppressWarnings({
-        "checkstyle:Indentation",
-        "checkstyle:NoWhitespaceBefore",
-        "checkstyle:MissingJavadocType",
-        "checkstyle:LineLength"
-})
 public class Engine {
     public static final int ROUNDS_COUNT = 3;
-    private static final Scanner scannerInput = new Scanner(System.in);
-    private static final Random randomGenerator = new Random();
+    private static final Scanner SCANNER_INPUT = new Scanner(System.in);
+    private static final Random RANDOM_GENERATOR = new Random();
     private static String name;
-    public static int getRandomNumber(int min, int max) {
 
-        return randomGenerator.nextInt(max - min + 1) + min;
+    public static int getRandomNumber(int min, int max) {
+        return RANDOM_GENERATOR.nextInt(max - min + 1) + min;
     }
 
     @SuppressWarnings("checkstyle:EmptyLineSeparator")
@@ -37,7 +32,7 @@ public class Engine {
             String correctAnswer = questionAndAnswer[1];
             System.out.println("Question: " + question);
             System.out.print("Your answer: ");
-            String userAnswer = scannerInput.nextLine();
+            String userAnswer = SCANNER_INPUT.nextLine();
 
             if (checkAnswer(userAnswer, correctAnswer)) {
                 System.out.println("Correct!");
@@ -50,20 +45,23 @@ public class Engine {
         }
 
         if (correctAnswersCount == ROUNDS_COUNT) {
-            System.out.println("Congratulations, " + name +"!");
+            System.out.println("Congratulations, " + name + "!");
         }
     }
 
     public static void playEvenGame() {
         Even.play();
     }
+
     @SuppressWarnings("checkstyle:EmptyLineSeparator")
     public static void playCalcGame() {
         Calc.play();
     }
+
     public static void playGCDGame() {
         GCD.play();
     }
+
     public static void playPrimeGame() {
         Prime.play();
     }
@@ -72,7 +70,6 @@ public class Engine {
         Progression.play();
     }
 
-
     public static void sayHello(String[] args) {
         Scanner scannerHello = new Scanner(System.in);
         System.out.println("Welcome to the Brain Games!");
@@ -80,6 +77,4 @@ public class Engine {
         name = scannerHello.next();
         System.out.println("Hello, " + name + "!");
     }
-
 }
-

@@ -13,10 +13,7 @@ public class Prime {
             int anyNumber = Engine.getRandomNumber(MIN_NUMBER, MAX_NUMBER);
             String question = String.valueOf(anyNumber);
             String correctAnswer = checkPrime(anyNumber) ? "yes" : "no";
-            questionsAndAnswers[i] = new String[] {
-                    question,
-                    correctAnswer
-            };
+            questionsAndAnswers[i] = new String[]{question, correctAnswer};
         }
         Engine.play(GAME_DESCRIPTION, questionsAndAnswers);
     }
