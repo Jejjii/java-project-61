@@ -11,7 +11,7 @@ public class Prime {
     public static void play() {
         String[][] questionsAndAnswers = new String[Engine.ROUNDS_COUNT][2];
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
-            int anyNumber = Utils.getRandomNumber(MIN_NUMBER,MAX_NUMBER);
+            int anyNumber = Utils.getRandomNumber(MIN_NUMBER, MAX_NUMBER);
             String question = String.valueOf(anyNumber);
             String correctAnswer = checkPrime(anyNumber) ? "yes" : "no";
             questionsAndAnswers[i] = new String[]{question, correctAnswer};

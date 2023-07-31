@@ -12,8 +12,8 @@ public class GCD {
     public static void play() {
         String[][] questionsAndAnswers = new String[OPERATIONS_COUNT][2];
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
-            int firstNumber = Utils.getRandomNumber(MIN_NUMBER,MAX_NUMBER);
-            int secondNumber = Utils.getRandomNumber(MIN_NUMBER,MAX_NUMBER);
+            int firstNumber = Utils.getRandomNumber(MIN_NUMBER, MAX_NUMBER);
+            int secondNumber = Utils.getRandomNumber(MIN_NUMBER, MAX_NUMBER);
             int correctAnswer = find(firstNumber, secondNumber);
             String question = String.format("%d %d", firstNumber, secondNumber);
             questionsAndAnswers[i] = new String[]{question, String.valueOf(correctAnswer)};
