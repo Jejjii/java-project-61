@@ -1,11 +1,7 @@
 package hexlet.code;
 import java.util.Scanner;
-
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
-@SuppressWarnings({"checkstyle:Indentation", "checkstyle:MissingJavadocType"})
 public class App {
-    @SuppressWarnings("checkstyle:MissingJavadocMethod")
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the game number and press Enter.");
@@ -22,27 +18,22 @@ public class App {
 
         switch (choice) {
             case "1":
-                Engine.sayHello(args);
+                Cli.greet();
                 break;
             case "2":
-                Engine.sayHello(args);
-                Engine.playEvenGame();
+                runGame(Engine::playEvenGame);
                 break;
             case "3":
-                Engine.sayHello(args);
-                Engine.playCalcGame();
+                runGame(Engine::playCalcGame);
                 break;
             case "4":
-                Engine.sayHello(args);
-                Engine.playGCDGame();
+                runGame(Engine::playGCDGame);
                 break;
             case "5":
-                Engine.sayHello(args);
-                Engine.playProgressionGame();
+                runGame(Engine::playProgressionGame);
                 break;
             case "6":
-                Engine.sayHello(args);
-                Engine.playPrimeGame();
+                runGame(Engine::playPrimeGame);
                 break;
             case "0":
                 // код для выхода из программы
@@ -52,6 +43,9 @@ public class App {
                 break;
         }
     }
+
+    private static void runGame(Runnable game) {
+        Engine.sayHello(null); // null, так как args не используются в sayHello
+        game.run();
+    }
 }
-
-

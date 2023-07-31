@@ -1,7 +1,8 @@
 package hexlet.code.games;
 import hexlet.code.Engine;
+import hexlet.code.util.Utils;
 
-@SuppressWarnings("checkstyle:Indentation")
+
 public class Calc {
 
     private static final String GAME_DESCRIPTION = "What is the result of the expression?";
@@ -13,9 +14,9 @@ public class Calc {
     public static void play() {
         String[][] questionsAndAnswers = new String[Engine.ROUNDS_COUNT][2];
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
-            int firstOperand = Engine.getRandomNumber(MIN_NUMBER, MAX_NUMBER);
-            int secondOperand = Engine.getRandomNumber(MIN_NUMBER, MAX_NUMBER);
-            int operationIndex = Engine.getRandomNumber(0, OPERATIONS_COUNT - 1);
+            int firstOperand = Utils.getRandomNumber(MIN_NUMBER,MAX_NUMBER);
+            int secondOperand = Utils.getRandomNumber(MIN_NUMBER,MAX_NUMBER);
+            int operationIndex = Utils.getRandomNumber(0,OPERATIONS_COUNT - 1);
             int correctAnswer = calc(firstOperand, secondOperand, operationIndex);
             String question = String.format("%d %s %d",
                     firstOperand, getOperationSymbol(operationIndex), secondOperand);

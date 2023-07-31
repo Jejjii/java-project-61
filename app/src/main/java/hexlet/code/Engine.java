@@ -11,19 +11,11 @@ import hexlet.code.games.Prime;
 public class Engine {
     public static final int ROUNDS_COUNT = 3;
     private static final Scanner SCANNER_INPUT = new Scanner(System.in);
-    private static final Random RANDOM_GENERATOR = new Random();
     private static String name;
-
-    public static int getRandomNumber(int min, int max) {
-        return RANDOM_GENERATOR.nextInt(max - min + 1) + min;
-    }
-
-    @SuppressWarnings("checkstyle:EmptyLineSeparator")
     public static boolean checkAnswer(String userAnswer, String correctAnswer) {
         return userAnswer.equals(correctAnswer);
     }
 
-    @SuppressWarnings("checkstyle:MissingJavadocMethod")
     public static void play(String gameDescription, String[][] questionsAndAnswers) {
         System.out.println(gameDescription);
         int correctAnswersCount = 0;
@@ -43,17 +35,14 @@ public class Engine {
                 return;
             }
         }
+        System.out.println("Congratulations, " + name + "!");
 
-        if (correctAnswersCount == ROUNDS_COUNT) {
-            System.out.println("Congratulations, " + name + "!");
-        }
     }
 
     public static void playEvenGame() {
         Even.play();
     }
 
-    @SuppressWarnings("checkstyle:EmptyLineSeparator")
     public static void playCalcGame() {
         Calc.play();
     }
