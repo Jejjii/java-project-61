@@ -9,5 +9,6 @@ public class Cli {
         System.out.println("May I have your name? ");
         String name = scanner.next();
         System.out.println("Hello, " + name + "!");
+        Engine.setName(name);
     }
 }

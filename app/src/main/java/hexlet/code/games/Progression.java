@@ -18,27 +18,21 @@ public class Progression {
             int startNumber = Utils.getRandomNumber(MIN_START_NUMBER, MAX_START_NUMBER);
             int step = Utils.getRandomNumber(MIN_STEP, MAX_STEP);
             int length = Utils.getRandomNumber(MIN_LENGTH, MAX_LENGTH);
-            String progression = generateProgression(startNumber, step, length);
+            String[] progression = generateProgressionArray(startNumber, step, length);
             int missingIndex = Utils.getRandomNumber(0, length - 1);
-            String correctAnswer = String.valueOf(startNumber + (step * missingIndex));
-            String question = replaceNumberWithDots(progression, missingIndex);
+            String correctAnswer = progression[missingIndex];
+            progression[missingIndex] = "..";
+            String question = String.join(" ", progression);
             questionsAndAnswers[i] = new String[]{question, correctAnswer};
         }
         Engine.play(GAME_DESCRIPTION, questionsAndAnswers);
     }
 
-    public static String generateProgression(int startNumber, int step, int length) {
-        StringBuilder progression = new StringBuilder();
+    public static String[] generateProgressionArray(int startNumber, int step, int length) {
+        String[] progression = new String[length];
         for (int i = 0; i < length; i++) {
-            int currentNumber = startNumber + (step * i);
-            progression.append(currentNumber).append(" ");
+            progression[i] = String.valueOf(startNumber + (step * i));
         }
-        return progression.toString().trim();
-    }
-
-    public static String replaceNumberWithDots(String progression, int index) {
-        String[] numbers = progression.split(" ");
-        numbers[index] = "..";
-        return String.join(" ", numbers);
+        return progression;
     }
 }
