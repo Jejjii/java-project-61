@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class Engine {
     public static final int ROUNDS_COUNT = 3;
-    private static String name;
+    private static String playerName;
 
     public static String getName() {
-        return name;
+        return playerName;
     }
 
     public static void setName(String name) {
-        Engine.name = name;
+        Engine.playerName = name;
     }
 
     public static void play(String gameDescription, String[][] questionsAndAnswers) {
